@@ -17,6 +17,22 @@
         &:hover {
             width: 100%;
         }
+
+        &--1 {
+            animation: 1.5s ease-in 1s backwards moveInLeft;
+        }
+        &--2 {
+            animation: 1.5s ease-in 1.3s backwards moveInLeft;
+        }
+        &--3 {
+            animation: 1.5s ease-in 1.6s backwards moveInLeft;
+        }
+        &--4 {
+            animation: 1.5s ease-in 1.9s backwards moveInLeft;
+        }
+        &--5 {
+            animation: 1.5s ease-in 2.2s backwards moveInLeft;
+        }
     }
 
 

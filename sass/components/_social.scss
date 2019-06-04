@@ -1,0 +1,28 @@
+.social {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $color-black;
+    box-shadow: 0 0 2rem $color-black;
+    border-radius: 3px;
+    height: 4rem;
+    width: 12rem;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__item {
+        display: block
+    }
+    &__link {}
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-grey-gold;
+        &:hover {
+            fill: $color-primary;
+        }
+    }
+
+}
