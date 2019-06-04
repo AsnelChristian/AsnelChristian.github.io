@@ -1,0 +1,28 @@
+.citation {
+    position: absolute;
+
+    &--1 {
+        top: 5rem;
+        left: 12rem;
+    }
+    &--2 {
+        bottom: 7rem;
+        left: 12rem;
+    }
+
+    &--3 {
+        top: 5.5rem;
+        right: 5rem;
+    }
+
+    &--4 {
+        bottom: 7rem;
+        right: 5rem;
+    }
+
+    &--5 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

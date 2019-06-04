@@ -3,13 +3,13 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    width: 10rem;
+    width: 9.5rem;
     list-style: none;
 
     &__item {
         background-color: $color-black;
         width: 70%;
-        height: 6.5rem;
+        height: 6rem;
         margin-top: -.1rem;
         transition: all .4s;
         box-shadow: 0 0 2rem $color-black;
@@ -61,9 +61,8 @@
     }
 
     &__icon {
-        height: 3.5rem;
-        width: 3.5rem;
-        transition: all .2s;
+        height: 3.25rem;
+        width: 3.25rem;
     }
     &__item--active &__icon {
         --color1: var(--color-primary);
@@ -73,9 +72,8 @@
         color: $color-primary;
         text-transform: uppercase;
         letter-spacing: .2rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         display: none;
         visibility: hidden;
-        transition: all .3s;
     }
 }

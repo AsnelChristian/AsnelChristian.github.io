@@ -30,19 +30,22 @@ body {
   font-family: 'Titillium Web', sans-serif; }
 
 .citation {
-  font-family: 'Dancing Script', cursive; }
+  font-family: 'Dancing Script', cursive;
+  color: #5b554d;
+  font-size: 1.8rem;
+  font-weight: 100; }
 
 .side-nav {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 10rem;
+  width: 9.5rem;
   list-style: none; }
   .side-nav__item {
     background-color: #121212;
     width: 70%;
-    height: 6.5rem;
+    height: 6rem;
     margin-top: -.1rem;
     transition: all .4s;
     box-shadow: 0 0 2rem #121212; }
@@ -74,19 +77,17 @@ body {
     display: block;
     visibility: visible; }
   .side-nav__icon {
-    height: 3.5rem;
-    width: 3.5rem;
-    transition: all .2s; }
+    height: 3.25rem;
+    width: 3.25rem; }
   .side-nav__item--active .side-nav__icon {
     --color1: var(--color-primary); }
   .side-nav__text {
     color: #16f7d5;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: none;
-    visibility: hidden;
-    transition: all .3s; }
+    visibility: hidden; }
 
 .social {
   list-style: none;
@@ -113,3 +114,22 @@ body {
 .content {
   position: relative;
   min-height: 100vh; }
+
+.citation {
+  position: absolute; }
+  .citation--1 {
+    top: 5rem;
+    left: 12rem; }
+  .citation--2 {
+    bottom: 7rem;
+    left: 12rem; }
+  .citation--3 {
+    top: 5.5rem;
+    right: 5rem; }
+  .citation--4 {
+    bottom: 7rem;
+    right: 5rem; }
+  .citation--5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
