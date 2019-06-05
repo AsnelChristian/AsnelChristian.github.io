@@ -11,8 +11,8 @@
     }
 
     &--3 {
-        top: 5.5rem;
-        right: 5rem;
+        top: 5rem;
+        right: 30%;
     }
 
     &--4 {
@@ -21,8 +21,83 @@
     }
 
     &--5 {
-        top: 50%;
+        top: 41%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+
+.cube__branch-1 {
+
+    &--6 {
+        position: absolute;
+        top: 24%;
+        right: 32%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) .8s backwards fadeIn;
+
+    }
+
+    &--1 {
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s backwards fadeIn;
+
+    }
+    &--2 {
+        position: absolute;
+        top: 37%;
+        right: 10%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s backwards fadeIn;
+    }
+    &--3 {
+        position: absolute;
+        top: 50%;
+        right: 23%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s backwards fadeIn;
+    }
+    &--8 {
+        position: absolute;
+        top: 50%;
+        right: 32%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn;
+    }
+    &--9 {
+        position: absolute;
+        top: 50%;
+        right: 40%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s backwards fadeIn;
+
+    }
+    &--4 {
+        position: absolute;
+        top: 63%;
+        right: 10%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9s backwards fadeIn;
+
+    }
+    &--5 {
+        position: absolute;
+        top: 80%;
+        right: 20%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s backwards fadeIn;
+
+    }
+    &--7 {
+        position: absolute;
+        top: 76%;
+        right: 32%;
+        transform: translateY(-50%);
+        animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn;
+    }
+
 }
