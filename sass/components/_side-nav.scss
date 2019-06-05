@@ -14,7 +14,8 @@
         transition: all .4s;
         box-shadow: 0 0 2rem $color-black;
 
-        &:hover {
+        &:hover,
+        &:focus {
             width: 100%;
         }
 
@@ -51,11 +52,13 @@
         }
     }
 
-    &__link:hover &__icon {
+    &__link:hover &__icon,
+    &__link:focus &__icon {
         display: none;
         visibility: hidden;
     }
-    &__link:hover &__text {
+    &__link:hover &__text,
+    &__link:focus &__text {
         display: block;
         visibility: visible;
     }

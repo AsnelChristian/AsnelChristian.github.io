@@ -1,0 +1,26 @@
+////////////////////////////////
+//     Respond manager        //
+////////////////////////////////
+
+
+/* Here are the possible value for $break-point
+1) phone (600px)
+2) tab-port (900px)
+3) tab-land (1140px)
+4) big-desktop (1800px)
+
+1em = 16px*/
+@mixin respond($break-point) {
+    @if $break-point == phone {
+        @media(max-width: 37.5em) {@content};
+    }
+    @if $break-point == tab-port {
+        @media(max-width: 56.26em) {@content};
+    }
+    @if $break-point == tab-land {
+        @media(max-width: 71.25em) {@content};
+    }
+    @if $break-point == big-desktop {
+        @media(min-width: 112.5em) {@content};
+    }
+}

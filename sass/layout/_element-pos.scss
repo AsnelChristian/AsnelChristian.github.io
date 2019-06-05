@@ -37,6 +37,11 @@
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) .8s backwards fadeIn;
 
+        @include respond(phone) {
+            visibility: hidden;
+            display: none;
+        }
+
     }
 
     &--1 {
@@ -67,6 +72,11 @@
         right: 32%;
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn;
+
+        @include respond(phone) {
+            visibility: hidden;
+            display: none;
+        }
     }
     &--9 {
         position: absolute;
@@ -74,6 +84,11 @@
         right: 40%;
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s backwards fadeIn;
+
+        @include respond(phone) {
+            visibility: hidden;
+            display: none;
+        }
 
     }
     &--4 {
@@ -98,6 +113,11 @@
         right: 32%;
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn;
+
+        @include respond(phone) {
+            visibility: hidden;
+            display: none;
+        }
     }
 
 }

@@ -1,3 +1,10 @@
+/* Here are the possible value for $break-point
+1) phone (600px)
+2) tab-port (900px)
+3) tab-land (1140px)
+4) big-desktop (1800px)
+
+1em = 16px*/
 :root {
   --color-grey-gold: #5b5b5b;
   --color-primary: #16f7d5; }
@@ -55,6 +62,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 71.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 56.26em) {
+    html {
+      font-size: 43.75%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   background-color: #252627;
@@ -196,7 +215,7 @@ body {
     margin-top: -.1rem;
     transition: all .4s;
     box-shadow: 0 0 2rem #121212; }
-    .side-nav__item:hover {
+    .side-nav__item:hover, .side-nav__item:focus {
       width: 100%; }
     .side-nav__item--1 {
       animation: 1.5s ease-in 1s backwards moveInLeft; }
@@ -217,10 +236,12 @@ body {
     padding-right: 1.5rem; }
     .side-nav__link:link, .side-nav__link:visited {
       text-decoration: none; }
-  .side-nav__link:hover .side-nav__icon {
+  .side-nav__link:hover .side-nav__icon,
+  .side-nav__link:focus .side-nav__icon {
     display: none;
     visibility: hidden; }
-  .side-nav__link:hover .side-nav__text {
+  .side-nav__link:hover .side-nav__text,
+  .side-nav__link:focus .side-nav__text {
     display: block;
     visibility: visible; }
   .side-nav__icon {
@@ -287,6 +308,10 @@ body {
   right: 32%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s backwards fadeIn; }
+  @media (max-width: 37.5em) {
+    .cube__branch-1--6 {
+      visibility: hidden;
+      display: none; } }
 
 .cube__branch-1--1 {
   position: absolute;
@@ -315,6 +340,10 @@ body {
   right: 32%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn; }
+  @media (max-width: 37.5em) {
+    .cube__branch-1--8 {
+      visibility: hidden;
+      display: none; } }
 
 .cube__branch-1--9 {
   position: absolute;
@@ -322,6 +351,10 @@ body {
   right: 40%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s backwards fadeIn; }
+  @media (max-width: 37.5em) {
+    .cube__branch-1--9 {
+      visibility: hidden;
+      display: none; } }
 
 .cube__branch-1--4 {
   position: absolute;
@@ -343,6 +376,10 @@ body {
   right: 32%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn; }
+  @media (max-width: 37.5em) {
+    .cube__branch-1--7 {
+      visibility: hidden;
+      display: none; } }
 
 .whoami {
   position: absolute;
