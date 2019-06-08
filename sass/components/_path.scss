@@ -1,0 +1,129 @@
+.path {
+    position: absolute;
+    top: 50%;
+    right: 8rem;
+    transform: translateY(-50%);
+
+    &__line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2.5rem;
+    }
+}
+
+.hexagon {
+    width: 10rem;
+    height: 10rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: $color-black;
+    margin: .1rem;
+    color: transparent;
+    transition: all .2s;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    &--1:checked + &__label &__icon,
+    &--2:checked + &__label &__icon,
+    &--3:checked + &__label &__icon,
+    &--4:checked + &__label &__icon,
+    &--5:checked + &__label &__icon,
+    &--6:checked + &__label &__icon,
+    &--7:checked + &__label &__icon,
+    &--8:checked + &__label &__icon,
+    &--9:checked + &__label &__icon,
+    &--10:checked + &__label &__icon,
+    &--11:checked + &__label &__icon,
+    &--12:checked + &__label &__icon,
+    &--13:checked + &__label &__icon,
+    &--14:checked + &__label &__icon,
+    &--15:checked + &__label &__icon,
+    &--16:checked + &__label &__icon,
+    &--17:checked + &__label &__icon,
+    &--18:checked + &__label &__icon,
+    &__check,
+    &__solution {
+        visibility: hidden;
+        display: none;
+    }
+    
+    &--1:checked + &__label &__solution,
+    &--2:checked + &__label &__solution,
+    &--3:checked + &__label &__solution,
+    &--4:checked + &__label &__solution,
+    &--5:checked + &__label &__solution,
+    &--6:checked + &__label &__solution,
+    &--7:checked + &__label &__solution,
+    &--8:checked + &__label &__solution,
+    &--9:checked + &__label &__solution,
+    &--10:checked + &__label &__solution,
+    &--11:checked + &__label &__solution,
+    &--12:checked + &__label &__solution,
+    &--13:checked + &__label &__solution,
+    &--14:checked + &__label &__solution,
+    &--15:checked + &__label &__solution,
+    &--16:checked + &__label &__solution,
+    &--17:checked + &__label &__solution,
+    &--18:checked + &__label &__solution{
+        visibility: visible;
+        display: inline-block;
+    }
+
+    &__icon {
+        height: 10rem;
+        width: 10rem;
+
+        &--emoticon {
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+
+    &--green {   
+        fill: $color-primary;
+        --color1: var(--color-primary);
+        --color2: var(--color-primary);
+    }
+
+    &--red {   
+        fill: $color-secondary;
+        --color1: var(--color-secondary);
+        --color2: var(--color-secondary);
+    }
+    &--blue {   
+        fill: $color-tertiary;
+        --color1: var(--color-tertiary);
+        --color2: var(--color-tertiary);
+    }
+    &--magenta {   
+        fill: $color-magenta;
+        --color1: var(--color-magenta);
+        --color2: var(--color-magenta);
+    }
+    &--grey-gold { 
+        fill: $color-grey-gold;
+        --color1: var(--color-grey-gold);
+        --color2: var(--color-grey-gold);
+    }
+
+    &__label {
+        transition: all .3s;
+    }
+    &__found:checked + &__label {
+        filter: drop-shadow(0 0 2rem gold);
+        z-index: 2;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        font-family: 'Dancing Script', cursive;
+        color: $color-primary;
+    }
+}

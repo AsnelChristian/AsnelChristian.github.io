@@ -7,7 +7,10 @@
 1em = 16px*/
 :root {
   --color-grey-gold: #5b5b5b;
-  --color-primary: #16f7d5; }
+  --color-primary: #16f7d5;
+  --color-secondary: #dd0031;
+  --color-tertiary: #5bdafb;
+  --color-magenta: #ff00ff; }
 
 @keyframes moveInLeft {
   0% {
@@ -200,6 +203,108 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(18, 18, 18, 0.8);
     box-shadow: #121212 0 0 0.8rem; }
+
+.path {
+  position: absolute;
+  top: 50%;
+  right: 8rem;
+  transform: translateY(-50%); }
+  .path__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.5rem; }
+
+.hexagon {
+  width: 10rem;
+  height: 10rem;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #121212;
+  margin: .1rem;
+  color: transparent;
+  transition: all .2s;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .hexagon:hover {
+    transform: scale(1.05); }
+  .hexagon--1:checked + .hexagon__label .hexagon__icon,
+  .hexagon--2:checked + .hexagon__label .hexagon__icon,
+  .hexagon--3:checked + .hexagon__label .hexagon__icon,
+  .hexagon--4:checked + .hexagon__label .hexagon__icon,
+  .hexagon--5:checked + .hexagon__label .hexagon__icon,
+  .hexagon--6:checked + .hexagon__label .hexagon__icon,
+  .hexagon--7:checked + .hexagon__label .hexagon__icon,
+  .hexagon--8:checked + .hexagon__label .hexagon__icon,
+  .hexagon--9:checked + .hexagon__label .hexagon__icon,
+  .hexagon--10:checked + .hexagon__label .hexagon__icon,
+  .hexagon--11:checked + .hexagon__label .hexagon__icon,
+  .hexagon--12:checked + .hexagon__label .hexagon__icon,
+  .hexagon--13:checked + .hexagon__label .hexagon__icon,
+  .hexagon--14:checked + .hexagon__label .hexagon__icon,
+  .hexagon--15:checked + .hexagon__label .hexagon__icon,
+  .hexagon--16:checked + .hexagon__label .hexagon__icon,
+  .hexagon--17:checked + .hexagon__label .hexagon__icon,
+  .hexagon--18:checked + .hexagon__label .hexagon__icon, .hexagon__check, .hexagon__solution {
+    visibility: hidden;
+    display: none; }
+  .hexagon--1:checked + .hexagon__label .hexagon__solution,
+  .hexagon--2:checked + .hexagon__label .hexagon__solution,
+  .hexagon--3:checked + .hexagon__label .hexagon__solution,
+  .hexagon--4:checked + .hexagon__label .hexagon__solution,
+  .hexagon--5:checked + .hexagon__label .hexagon__solution,
+  .hexagon--6:checked + .hexagon__label .hexagon__solution,
+  .hexagon--7:checked + .hexagon__label .hexagon__solution,
+  .hexagon--8:checked + .hexagon__label .hexagon__solution,
+  .hexagon--9:checked + .hexagon__label .hexagon__solution,
+  .hexagon--10:checked + .hexagon__label .hexagon__solution,
+  .hexagon--11:checked + .hexagon__label .hexagon__solution,
+  .hexagon--12:checked + .hexagon__label .hexagon__solution,
+  .hexagon--13:checked + .hexagon__label .hexagon__solution,
+  .hexagon--14:checked + .hexagon__label .hexagon__solution,
+  .hexagon--15:checked + .hexagon__label .hexagon__solution,
+  .hexagon--16:checked + .hexagon__label .hexagon__solution,
+  .hexagon--17:checked + .hexagon__label .hexagon__solution,
+  .hexagon--18:checked + .hexagon__label .hexagon__solution {
+    visibility: visible;
+    display: inline-block; }
+  .hexagon__icon {
+    height: 10rem;
+    width: 10rem; }
+    .hexagon__icon--emoticon {
+      height: 5rem;
+      width: 5rem; }
+  .hexagon--green {
+    fill: #16f7d5;
+    --color1: var(--color-primary);
+    --color2: var(--color-primary); }
+  .hexagon--red {
+    fill: #dd0031;
+    --color1: var(--color-secondary);
+    --color2: var(--color-secondary); }
+  .hexagon--blue {
+    fill: #5bdafb;
+    --color1: var(--color-tertiary);
+    --color2: var(--color-tertiary); }
+  .hexagon--magenta {
+    fill: #ff00ff;
+    --color1: var(--color-magenta);
+    --color2: var(--color-magenta); }
+  .hexagon--grey-gold {
+    fill: #5b554d;
+    --color1: var(--color-grey-gold);
+    --color2: var(--color-grey-gold); }
+  .hexagon__label {
+    transition: all .3s; }
+  .hexagon__found:checked + .hexagon__label {
+    filter: drop-shadow(0 0 2rem gold);
+    z-index: 2; }
+  .hexagon__text {
+    font-size: 1.8rem;
+    font-family: 'Dancing Script', cursive;
+    color: #16f7d5; }
 
 .side-nav {
   position: absolute;
