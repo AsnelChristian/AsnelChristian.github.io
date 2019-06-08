@@ -353,7 +353,7 @@ body {
     height: 3.25rem;
     width: 3.25rem; }
   .side-nav__item--active .side-nav__icon {
-    --color1: var(--color-primary); }
+    --color3: var(--color-primary); }
   .side-nav__text {
     color: #16f7d5;
     text-transform: uppercase;
