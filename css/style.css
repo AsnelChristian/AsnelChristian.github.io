@@ -207,7 +207,7 @@ body {
 .path {
   position: absolute;
   top: 50%;
-  right: 8rem;
+  right: 5rem;
   transform: translateY(-50%); }
   .path__line {
     display: flex;
@@ -406,6 +406,8 @@ body {
     top: 41%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .citation--feeling {
+    position: relative; }
 
 .cube__branch-1--6 {
   position: absolute;
@@ -485,6 +487,25 @@ body {
     .cube__branch-1--7 {
       visibility: hidden;
       display: none; } }
+
+.about-me {
+  position: absolute;
+  top: 50%;
+  left: 16rem;
+  transform: translateY(-50%); }
+
+.emoticon-game {
+  position: absolute;
+  top: 50%;
+  right: 58rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.game__hint--icon {
+  fill: #5b554d;
+  --color1: var(--color-grey-gold); }
 
 .whoami {
   position: absolute;

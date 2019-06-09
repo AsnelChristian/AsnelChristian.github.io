@@ -4,3 +4,19 @@
     left: 16rem;
     transform: translateY(-50%);
 }
+
+.emoticon-game {
+    position: absolute;
+    top: 50%;
+    right: 58rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.game__hint {
+    &--icon {
+        fill: $color-grey-gold;
+        --color1: var(--color-grey-gold);
+    }
+}
