@@ -64,8 +64,7 @@
                 left: 3rem;
                 border-left: 3px solid $color-black;
                 border-bottom: 3px solid $color-black;
-                border-right: 3px solid transparent;
-                border-radius: 10px;
+                border-bottom-left-radius: 10px;
             }
         }
         &--2 {
@@ -79,8 +78,8 @@
                 border-right: 3px solid $color-black;
                 border-top: 3px solid $color-black;
                 border-bottom: 3px solid $color-black;
-                border-left: 3px solid transparent;
-                border-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
             }
         }
         &--3 {
@@ -89,8 +88,7 @@
                 left: 3rem;
                 border-left: 3px solid $color-black;
                 border-top: 3px solid $color-black;
-                border-right: 3px solid transparent;
-                border-radius: 10px;
+                border-top-left-radius: 10px;
             }
         }
 
