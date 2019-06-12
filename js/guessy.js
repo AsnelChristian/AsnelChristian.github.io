@@ -26,7 +26,7 @@
         emoticons.ids.sort(function(a, b) { return 0.5 - Math.random();});
         gameColors.sort(function(a, b) { return 0.5 - Math.random();});
 
-        document.querySelector('.game__hint--story').textContent = "Can you find this following emoji";
+        document.querySelector('.game__hint--story').textContent = "Try to find: ";
 
         solutionIndex = Math.floor(Math.random() * hexagons__check.length);
 

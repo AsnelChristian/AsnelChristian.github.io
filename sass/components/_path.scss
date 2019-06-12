@@ -115,6 +115,22 @@
 
     &__label {
         transition: all .3s;
+        opacity: 0;
+        &:nth-child(5n+0) {
+            animation: .8s 1.5s fadeIn forwards;
+        }
+        &:nth-child(5n+1) {
+            animation: .8s 1.2s fadeIn forwards;
+        }
+        &:nth-child(5n+2) {
+            animation: .8s 1.9s fadeIn forwards;
+        }
+        &:nth-child(5n+3) {
+            animation: .8s 2.1s fadeIn forwards;
+        }
+        &:nth-child(5n+4) {
+            animation: .8s 2.3s fadeIn forwards;
+        }
     }
     &__found:checked + &__label {
         filter: drop-shadow(0 0 2rem gold);

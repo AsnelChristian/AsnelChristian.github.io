@@ -61,3 +61,28 @@
         visibility: visible;
     }
 }
+
+
+.moveInRight--1 {
+    animation: 1.2s ease-in-out .5s moveInRight backwards;
+}
+
+.moveInRight--2 {
+    animation: 1.2s ease-in-out .8s moveInRight backwards;
+}
+
+.moveInLeft--2 {
+    animation: 1.2s ease-in-out .8s moveInLeft backwards;
+}
+
+.moveInRight--3 {
+    animation: 1.2s ease-in-out 1.1s moveInRight backwards;
+}
+
+.moveInBottom--1 {
+    animation: 1.2s ease-in-out 1.1s moveInBottom backwards;
+}
+
+.moveInBottom--2 {
+    animation: 1.2s ease-in-out 1.4s moveInBottom backwards;
+}

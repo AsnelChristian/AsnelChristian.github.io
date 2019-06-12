@@ -14,3 +14,29 @@ body {
     font-size: 4.5rem;
     font-weight: 700;
 }
+
+.heading__secondary {
+    display: block;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.shiny {
+
+    &--green {
+        color: $color-primary;
+        text-shadow: 0 0 2rem $color-primary;
+    }
+    &--red {
+        color: $color-secondary;
+        text-shadow: 0 0 2rem $color-secondary;
+    }
+    &--blue {
+        color: $color-tertiary;
+        text-shadow: 0 0 2rem $color-tertiary;
+    }
+    &--magenta {
+        color: $color-magenta;
+        text-shadow: 0 0 2rem $color-magenta;
+    }
+}
