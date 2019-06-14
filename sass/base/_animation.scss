@@ -62,6 +62,72 @@
     }
 }
 
+@keyframes spin--1 {
+  100% {
+    transform: rotate(-720deg) translateX(-10rem);
+  }
+}
+@keyframes spin--2 {
+  100% {
+    transform: rotate(-660deg) translateX(-10rem);
+  }
+}
+@keyframes spin--3 {
+  100% {
+    transform: rotate(-600deg) translateX(-10rem);
+  }
+}
+@keyframes spin--4 {
+  100% {
+    transform: rotate(-540deg) translateX(-10rem);
+  }
+}
+@keyframes spin--5 {
+  100% {
+    transform: rotate(-480deg) translateX(-10rem);
+  }
+}
+
+@keyframes spin--6 {
+  100% {
+    transform: rotate(-420deg) translateX(-10rem);
+  }
+}
+
+@keyframes spin--7 {
+  100% {
+    transform: rotate(-690deg) translateX(-22rem);
+  }
+}
+
+@keyframes spin--8 {
+  100% {
+    transform: rotate(-630deg) translateX(-22rem);
+  }
+}
+@keyframes spin--9 {
+  100% {
+    transform: rotate(-570deg) translateX(-22rem);
+  }
+}
+@keyframes spin--10 {
+  100% {
+    transform: rotate(-510deg) translateX(-22rem);
+  }
+}
+@keyframes spin--11 {
+  100% {
+    transform: rotate(-450deg) translateX(-22rem);
+  }
+}
+
+@keyframes spin--12 {
+  100% {
+    transform: rotate(-390deg) translateX(-22rem);
+  }
+}
+
+
 
 .moveInRight--1 {
     animation: 1.2s ease-in-out .5s moveInRight backwards;
@@ -86,3 +152,4 @@
 .moveInBottom--2 {
     animation: 1.2s ease-in-out 1.4s moveInBottom backwards;
 }
+

@@ -1,0 +1,272 @@
+.stack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  &__center {
+    position: relative;
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    transform-origin: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1.5rem $color-primary;
+
+    &--icon {
+        width: 5rem;
+        height: 5rem;
+        fill: $color-primary;
+    }
+  }
+  &__orbit {
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &--1 {
+        border: 1px dashed $color-primary;
+        width: 20rem;
+        height: 20rem;
+      }
+      &--2 {
+        border: 1px dashed $color-magenta;
+        width: 43rem;
+        height: 43rem;
+      }
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    position: absolute;
+    display: block;
+    top: calc(50% - 4.5rem);
+    left: calc(50% - 4.5rem);
+    transform: rotate(0deg) translateX(0);
+    transform-origin: center;
+    width: 9rem;
+    height: 9rem;
+    
+    &:nth-child(1) {
+      transform: rotate(0deg) translateX(-10rem);
+      animation: spin--1 240s 10s ease-in infinite;
+    }
+    &:nth-child(1)>&--content{
+        transform: rotate(0deg) scale(1);
+
+        &:hover{
+            transform: rotate(0deg) scale(1.1);
+        }
+    }
+    &:nth-child(2) {
+      transform: rotate(60deg) translateX(-10rem);
+      animation: spin--2 240s 10s ease-in infinite;
+      
+    }
+
+    &:nth-child(2)>&--content{
+        transform: rotate(-60deg) scale(1);
+
+        &:hover{
+            transform: rotate(-60deg) scale(1.1);
+        }
+    }
+    &:nth-child(3) {
+      transform: rotate(120deg) translateX(-10rem);
+      animation: spin--3 240s 10s ease-in infinite;
+    }
+    &:nth-child(3)>&--content{
+        transform: rotate(-120deg) scale(1);
+
+        &:hover{
+            transform: rotate(-120deg) scale(1.1);
+        }
+    }
+    &:nth-child(4) {
+      transform: rotate(180deg) translateX(-10rem);
+      animation: spin--4 240s 10s ease-in infinite;
+    }
+    &:nth-child(4)>&--content{
+        transform: rotate(-180deg) scale(1);
+
+        &:hover{
+            transform: rotate(-180deg) scale(1.1);
+        }
+    }
+    &:nth-child(5) {
+      transform: rotate(240deg) translateX(-10rem);
+      animation: spin--5 240s 10s ease-in infinite;
+    }
+    &:nth-child(5)>&--content{
+        transform: rotate(-240deg) scale(1);
+
+        &:hover{
+            transform: rotate(-240deg) scale(1.1);
+        }
+    }
+    &:nth-child(6) {
+      transform: rotate(300deg) translateX(-10rem);
+      animation: spin--6 240s 10s ease-in infinite;
+    }
+    &:nth-child(6)>&--content{
+        transform: rotate(-300deg) scale(1);
+
+        &:hover{
+            transform: rotate(-300deg) scale(1.1);
+        }
+    }
+    &:nth-child(7) {
+      transform: rotate(30deg) translateX(-22rem);
+      animation: spin--7 240s 10s ease-in infinite reverse;
+    }
+    &:nth-child(7)>&--content{
+        transform: rotate(-30deg) scale(1);
+
+        &:hover{
+            transform: rotate(-30deg) scale(1.1);
+        }
+    }
+    &:nth-child(8) {
+      transform: rotate(90deg) translateX(-22rem);
+      animation: spin--8 240s 10s ease-in infinite reverse;
+    }
+
+    &:nth-child(8)>&--content{
+        transform: rotate(-90deg) scale(1);
+
+        &:hover{
+            transform: rotate(-90deg) scale(1.1);
+        }
+    }
+    &:nth-child(9) {
+      transform: rotate(150deg) translateX(-22rem);
+      animation: spin--9 240s 10s ease-in infinite reverse;
+    }
+
+    &:nth-child(9)>&--content{
+        transform: rotate(-150deg) scale(1);
+
+        &:hover{
+            transform: rotate(-150deg) scale(1.1);
+        }
+    }
+    &:nth-child(10) {
+      transform: rotate(210deg) translateX(-22rem);
+      animation: spin--10 240s 10s ease-in infinite reverse;
+    }
+
+    &:nth-child(10)>&--content{
+        transform: rotate(-210deg) scale(1);
+
+        &:hover{
+            transform: rotate(-210deg) scale(1.1);
+        }
+    }
+    &:nth-child(11) {
+      transform: rotate(270deg) translateX(-22rem);
+      animation: spin--11 240s 10s ease-in infinite reverse;
+    }
+
+    &:nth-child(11)>&--content{
+        transform: rotate(-270deg) scale(1);
+
+        &:hover{
+            transform: rotate(-270deg) scale(1.1);
+        }
+    }
+    &:nth-child(12) {
+      transform: rotate(330deg) translateX(-22rem);
+      animation: spin--12 240s 10s ease-in infinite reverse;
+    }
+    &:nth-child(12)>&--content{
+        transform: rotate(-330deg) scale(1);
+
+        &:hover{
+            transform: rotate(-330deg) scale(1.1);
+        }
+    }
+    
+    &--content{
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      background-color: $color-black;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      transition: all .3s;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        z-index: -99;
+        box-shadow: 0 0 1.5rem $color-black;
+      }
+    }
+  }
+  
+  
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+        &--bigger {
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+        &--python {
+            fill: $color-primary;
+        }
+  }
+
+  &__mastery {
+      display: none;
+      visibility: hidden;
+    
+      &--expert {
+          color: $color-secondary;
+      }
+      &--pro {
+          color: $color-primary;
+      }
+      &--medium {
+        color: $color-tertiary;
+      }
+      &--beginner {
+        color: $color-magenta;
+      }
+  }
+  &__level {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+  }
+  &__percentage {
+      text-align: center;
+      display: block;
+      font-size: 1.1rem;
+      letter-spacing: .1rem;
+  }
+  &__item--content:hover &__icon {
+    display: none; 
+    visibility: hidden;
+  }
+  &__item--content:hover &__mastery {
+    display: block;
+    visibility: visible;
+  }
+}
+
+

@@ -88,28 +88,28 @@
 
     &--green {   
         fill: $color-primary;
-        --color1: var(--color-primary);
+        --color3: var(--color-primary);
         --color2: var(--color-primary);
     }
 
     &--red {   
         fill: $color-secondary;
-        --color1: var(--color-secondary);
+        --color3: var(--color-secondary);
         --color2: var(--color-secondary);
     }
     &--blue {   
         fill: $color-tertiary;
-        --color1: var(--color-tertiary);
+        --color3: var(--color-tertiary);
         --color2: var(--color-tertiary);
     }
     &--magenta {   
         fill: $color-magenta;
-        --color1: var(--color-magenta);
+        --color3: var(--color-magenta);
         --color2: var(--color-magenta);
     }
     &--grey-gold { 
         fill: $color-grey-gold;
-        --color1: var(--color-grey-gold);
+        --color3: var(--color-grey-gold);
         --color2: var(--color-grey-gold);
     }
 
