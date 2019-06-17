@@ -1,9 +1,21 @@
 .about-me {
     position: absolute;
     top: 50%;
-    left: 16rem;
-    transform: translateY(-50%);
-
+    left: 14rem;
+    transform: translate(0, -50%);
+    width: 48%;
+    @include respond(tab-land) {
+        width: 42%;
+        left: 12rem;
+    }
+    @include respond(tab-port) {
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include respond(phone) {
+        width: 80%
+    }
 
     &__circle {
         width: 6rem;
@@ -42,7 +54,6 @@
     }
 
     &__element {
-        width: 55%;
         padding: 2.5rem 0;
         display: flex;
         align-items: center;

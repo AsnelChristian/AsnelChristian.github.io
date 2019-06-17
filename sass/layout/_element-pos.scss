@@ -4,15 +4,32 @@
     &--1 {
         top: 5rem;
         left: 12rem;
+        @include respond(tab-port){
+            top: 9rem;
+        }
+        @include respond(phone) {
+           left: 5rem;
+        }
     }
     &--2 {
         bottom: 5rem;
         left: 12rem;
+        @include respond(tab-port) {
+            bottom: 7rem;
+        }
+        @include respond(phone) {
+            left: 5rem;
+            bottom: 10rem;
+        }
     }
 
     &--3 {
         top: 5rem;
         right: 30%;
+        @include respond(tab-port) {
+            top: 12rem;
+            right: 5rem;
+        }
     }
 
     &--4 {
@@ -24,6 +41,10 @@
         top: 41%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include respond(tab-port) {
+            display: none;
+            visibility: hidden;
+        }
     }
     &--feeling {
         position: relative;
@@ -38,11 +59,6 @@
         right: 32%;
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) .8s backwards fadeIn;
-
-        @include respond(phone) {
-            visibility: hidden;
-            display: none;
-        }
 
     }
 
@@ -75,10 +91,6 @@
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn;
 
-        @include respond(phone) {
-            visibility: hidden;
-            display: none;
-        }
     }
     &--9 {
         position: absolute;
@@ -86,11 +98,6 @@
         right: 40%;
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s backwards fadeIn;
-
-        @include respond(phone) {
-            visibility: hidden;
-            display: none;
-        }
 
     }
     &--4 {
@@ -116,10 +123,6 @@
         transform: translateY(-50%);
         animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn;
 
-        @include respond(phone) {
-            visibility: hidden;
-            display: none;
-        }
     }
 
 }

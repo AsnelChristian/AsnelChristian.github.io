@@ -210,6 +210,10 @@ body {
   transform-style: preserve-3d;
   perspective-origin: 50% 50%;
   animation: 15s linear 0s infinite normal none running rotateCube; }
+  @media (max-width: 56.26em) {
+    .cube {
+      display: none;
+      visibility: hidden; } }
   .cube--normal {
     position: relative;
     width: 8rem;
@@ -318,6 +322,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer; }
+  @media (max-width: 56.26em) {
+    .hexagon {
+      display: none;
+      visibility: hidden; } }
   .hexagon:hover {
     transform: scale(1.05); }
   .hexagon--1:checked + .hexagon__label .hexagon__icon,
@@ -414,6 +422,10 @@ body {
   transform: translateY(-50%);
   width: 9.5rem;
   list-style: none; }
+  @media (max-width: 56.26em) {
+    .side-nav {
+      display: none;
+      visibility: hidden; } }
   .side-nav__item {
     background-color: #121212;
     width: 70%;
@@ -681,12 +693,29 @@ body {
   .citation--1 {
     top: 5rem;
     left: 12rem; }
+    @media (max-width: 56.26em) {
+      .citation--1 {
+        top: 9rem; } }
+    @media (max-width: 37.5em) {
+      .citation--1 {
+        left: 5rem; } }
   .citation--2 {
     bottom: 5rem;
     left: 12rem; }
+    @media (max-width: 56.26em) {
+      .citation--2 {
+        bottom: 7rem; } }
+    @media (max-width: 37.5em) {
+      .citation--2 {
+        left: 5rem;
+        bottom: 10rem; } }
   .citation--3 {
     top: 5rem;
     right: 30%; }
+    @media (max-width: 56.26em) {
+      .citation--3 {
+        top: 12rem;
+        right: 5rem; } }
   .citation--4 {
     bottom: 7rem;
     right: 5rem; }
@@ -694,6 +723,10 @@ body {
     top: 41%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 56.26em) {
+      .citation--5 {
+        display: none;
+        visibility: hidden; } }
   .citation--feeling {
     position: relative; }
 
@@ -703,10 +736,6 @@ body {
   right: 32%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s backwards fadeIn; }
-  @media (max-width: 37.5em) {
-    .cube__branch-1--6 {
-      visibility: hidden;
-      display: none; } }
 
 .cube__branch-1--1 {
   position: absolute;
@@ -735,10 +764,6 @@ body {
   right: 32%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn; }
-  @media (max-width: 37.5em) {
-    .cube__branch-1--8 {
-      visibility: hidden;
-      display: none; } }
 
 .cube__branch-1--9 {
   position: absolute;
@@ -746,10 +771,6 @@ body {
   right: 40%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s backwards fadeIn; }
-  @media (max-width: 37.5em) {
-    .cube__branch-1--9 {
-      visibility: hidden;
-      display: none; } }
 
 .cube__branch-1--4 {
   position: absolute;
@@ -771,16 +792,25 @@ body {
   right: 32%;
   transform: translateY(-50%);
   animation: 1.2s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s backwards fadeIn; }
-  @media (max-width: 37.5em) {
-    .cube__branch-1--7 {
-      visibility: hidden;
-      display: none; } }
 
 .about-me {
   position: absolute;
   top: 50%;
-  left: 16rem;
-  transform: translateY(-50%); }
+  left: 14rem;
+  transform: translate(0, -50%);
+  width: 48%; }
+  @media (max-width: 71.25em) {
+    .about-me {
+      width: 42%;
+      left: 12rem; } }
+  @media (max-width: 56.26em) {
+    .about-me {
+      width: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+  @media (max-width: 37.5em) {
+    .about-me {
+      width: 80%; } }
   .about-me__circle {
     width: 6rem;
     height: 6rem;
@@ -808,7 +838,6 @@ body {
     .about-me__icon--3 {
       fill: #ff00ff; }
   .about-me__element {
-    width: 55%;
     padding: 2.5rem 0;
     display: flex;
     align-items: center;
@@ -868,8 +897,18 @@ body {
 .whoami {
   position: absolute;
   top: 50%;
-  left: 16rem;
-  transform: translateY(-50%); }
+  left: 14rem;
+  transform: translate(0, -50%); }
+  @media (max-width: 56.26em) {
+    .whoami {
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center; } }
   .whoami__welcome {
     color: #cacaca; }
   .whoami__me {
@@ -914,13 +953,17 @@ body {
   .whoami__aspiration {
     border-left: 1px solid rgba(91, 85, 77, 0.8);
     border-radius: 3px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #3d3d3d;
     height: 5rem;
     padding: 1rem;
     margin-top: 2rem;
     display: flex;
     align-items: center; }
+    @media (max-width: 56.26em) {
+      .whoami__aspiration {
+        font-size: 2.5rem;
+        border-left: none; } }
     .whoami__aspiration--field {
       display: inline-block;
       margin: .8rem;

@@ -26,6 +26,11 @@
     align-items: center;
     cursor: pointer;
 
+    @include respond(tab-port) {
+        display: none;
+        visibility: hidden;
+    }
+
     &:hover {
         transform: scale(1.05);
     }

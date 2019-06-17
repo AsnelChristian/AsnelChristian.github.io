@@ -3,6 +3,10 @@
     perspective-origin: 50% 50%;
     animation: 15s linear 0s infinite normal none running rotateCube;
 
+    @include respond(tab-port) {
+        display: none; 
+        visibility: hidden;
+    }
     &--normal {
         position: relative;
         width: 8rem;
